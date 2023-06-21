@@ -394,15 +394,15 @@
 
          <script type="text/javascript"
              
-	  const scriptURL = 'https://script.google.com/macros/s/AKfycby57EbazqLqUXh381cz0R-pHAaJ3VC6--CYpXHZjXUaZdmE9ddLphEOsPdJGt1rQw5k/exec'
-            const form = document.forms['google-sheet']
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycby57EbazqLqUXh381cz0R-pHAaJ3VC6--CYpXHZjXUaZdmE9ddLphEOsPdJGt1rQw5k/exec';
+            const form = document.forms['google-sheet'];
           
             form.addEventListener('submit', e => {
-              e.preventDefault()
+              e.preventDefault();
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("You have successfully logged in."))
-                .catch(error => console.error('Error!', error.message))
-            })
+                .then(response => alert("You have successfully logged in.");)
+                .catch(error => console.error('Error!', error.message);)
+            });
   </script>
     </body>
 </html>
